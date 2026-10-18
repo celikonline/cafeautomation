@@ -41,6 +41,13 @@ test('cloud configuration requires stable credentials and HTTPS',()=>{
   assert.throws(()=>configuration({...env,CAFE_PUBLIC_URL:'http://cafe.example'}),/HTTPS/);
   assert.equal(configuration({...env,CAFE_PUBLIC_URL:undefined,VERCEL_URL:'preview.vercel.app'}).publicBase,'https://preview.vercel.app');
 });
+test('Vercel Marketplace KV variables work without copying secrets to another namespace',()=>{
+  const marketplace={...env,UPSTASH_REDIS_REST_URL:undefined,UPSTASH_REDIS_REST_TOKEN:undefined,KV_REST_API_URL:'https://marketplace.invalid',KV_REST_API_TOKEN:'marketplace-test-only'};
+  const config=configuration(marketplace);
+  assert.equal(config.url,'https://marketplace.invalid/');
+  assert.equal(config.token,'marketplace-test-only');
+  assert.throws(()=>configuration({...marketplace,UPSTASH_REDIS_REST_URL:'https://different.invalid'}),/UPSTASH_REDIS_REST_TOKEN/);
+});
 test('separate cloud instances share orders, preserve guest isolation and acknowledge only saved writes',async t=>{
   const fixture=redisFixture(),a=await listen(t,fixture),b=await listen(t,fixture);
   assert.equal((await a.call('/api/admin/state')).status,401);

@@ -5,7 +5,7 @@ Bu depo hem yerel geliştirmeyi hem Vercel dağıtımını destekler. Vercel sü
 ## Kurulum
 
 1. Vercel'de **Add New → Project** ile `celikonline/cafeautomation` deposunu içe aktarın. Dal: `master`; **Root Directory: repo kökü**; **Framework Preset: Other**. Alt klasörü kök olarak seçmeyin.
-2. Vercel Marketplace üzerinden bir **Upstash Redis** veritabanı bağlayın veya mevcut Upstash veritabanınızı kullanın. HTTP REST URL ve yazma yetkili REST token değerlerini ortam değişkenlerine ekleyin.
+2. Vercel Marketplace üzerinden bir **Upstash Redis** veritabanı bağlayın veya mevcut Upstash veritabanınızı kullanın. Marketplace bağlantısının otomatik eklediği `KV_REST_API_URL` ve `KV_REST_API_TOKEN` doğrudan desteklenir; gizli değerleri açıp kopyalamak gerekmez. Doğrudan Upstash bağlantısında `UPSTASH_REDIS_REST_URL` ve `UPSTASH_REDIS_REST_TOKEN` çiftini kullanın.
 3. Aşağıdaki ortam değişkenlerini **Deploy'a basmadan önce** tanımlayın. Önce bir proje kaydı oluşturmanız gerekirse değişkenleri girdikten sonra **Redeploy** yapın.
 4. `vercel.json` kurulum, üretim derlemesi, API yönlendirmeleri, statik dosyalar ve Node.js 24 ayarlarını belirler. Build Command `npm run build:cafe`, Output Directory `build/cafe` olmalıdır. Dev sunucusunu veya Storybook komutunu build komutu olarak kullanmayın.
 5. Yayın tamamlandığında `/` adresinde yönetici adı/parolasını girin. `/qr` üzerinden masa kartlarını yazdırın; müşteri girişi `/guest` adresindedir.

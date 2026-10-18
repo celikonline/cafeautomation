@@ -1,15 +1,20 @@
 const crypto=require('crypto');
 function configuration(env=process.env){
-  const required=['UPSTASH_REDIS_REST_URL','UPSTASH_REDIS_REST_TOKEN','CAFE_QR_SECRET','CAFE_ADMIN_PASSWORD'];
+  // Vercel Marketplace provisions KV_*; direct Upstash setup uses UPSTASH_*.
+  // Select one complete namespace so a URL and token from different databases never mix.
+  const direct=!!(env.UPSTASH_REDIS_REST_URL||env.UPSTASH_REDIS_REST_TOKEN);
+  const urlName=direct?'UPSTASH_REDIS_REST_URL':'KV_REST_API_URL';
+  const tokenName=direct?'UPSTASH_REDIS_REST_TOKEN':'KV_REST_API_TOKEN';
+  const required=[urlName,tokenName,'CAFE_QR_SECRET','CAFE_ADMIN_PASSWORD'];
   const missing=required.filter(name=>!env[name]);
   if(missing.length)throw new Error('Eksik Vercel ortam değişkenleri: '+missing.join(', '));
   if(env.CAFE_QR_SECRET.length<32)throw new Error('CAFE_QR_SECRET en az 32 karakter olmalı.');
   if(env.CAFE_ADMIN_PASSWORD.length<12)throw new Error('CAFE_ADMIN_PASSWORD en az 12 karakter olmalı.');
-  const url=new URL(env.UPSTASH_REDIS_REST_URL);
+  const url=new URL(env[urlName]);
   if(url.protocol!=='https:')throw new Error('Redis REST adresi HTTPS olmalı.');
   const publicBase=env.CAFE_PUBLIC_URL||(env.VERCEL_URL?'https://'+env.VERCEL_URL:'');
   if(!publicBase||new URL(publicBase).protocol!=='https:')throw new Error('CAFE_PUBLIC_URL için HTTPS yayın adresi gerekli.');
-  return {url:url.href,token:env.UPSTASH_REDIS_REST_TOKEN,secret:env.CAFE_QR_SECRET,user:env.CAFE_ADMIN_USER||'admin',password:env.CAFE_ADMIN_PASSWORD,publicBase:publicBase.replace(/\/$/,''),key:env.CAFE_STORE_KEY||'bahce:'+(env.VERCEL_ENV||'production')};
+  return {url:url.href,token:env[tokenName],secret:env.CAFE_QR_SECRET,user:env.CAFE_ADMIN_USER||'admin',password:env.CAFE_ADMIN_PASSWORD,publicBase:publicBase.replace(/\/$/,''),key:env.CAFE_STORE_KEY||'bahce:'+(env.VERCEL_ENV||'production')};
 }
 const equal=(a,b)=>crypto.timingSafeEqual(crypto.createHash('sha256').update(a).digest(),crypto.createHash('sha256').update(b).digest());
 function adminAuth({user,password}){
