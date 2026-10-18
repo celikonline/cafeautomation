@@ -17,3 +17,7 @@ package-lock.json
 /.eslintcache
 .cache
 storybook-static
+.vercel/
+.env
+.env.*
+!.env.example

@@ -2,6 +2,8 @@
 
 BOA bileşenleriyle geliştirilmiş yönetim paneli ve masaya bağlı müşteri deneyimi. Yerel sunucuda çalışır; gerçek POS tahsilatı veya mali fiş üretimi yapmaz.
 
+Vercel dağıtımı da desteklenir: [Vercel kurulum rehberi](../../VERCEL.md). Aşağıdaki yerel dosya ve localhost erişim bilgileri `npm run cafe` için geçerlidir; bulutta Redis ve parola korumalı yönetim kullanılır.
+
 ## Çalıştırma
 
 ```powershell

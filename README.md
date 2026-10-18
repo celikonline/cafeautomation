@@ -12,6 +12,8 @@ Yönetim: [localhost:3000](http://127.0.0.1:3000/) · Müşteri: [localhost:3000
 
 Doğrulama: `npm run test:cafe`. Telefon üzerinden PWA kurulumu için HTTPS gerekir. Yerel müşteri kayıtları ve QR imzalama anahtarları `tmp/` altında tutulur; Git'e dahil edilmez.
 
+**Vercel yayını:** [kurulum ve ortam değişkenleri](VERCEL.md). Üretim komutu `npm run build:cafe`; bulutta Upstash Redis ile kalıcı veri, yönetici girişi ve statik CDN video sunumu kullanılır.
+
 Bu proje [KuveytTurk/boa](https://github.com/KuveytTurk/boa) üzerine geliştirilmiştir. Orijinal bileşen kütüphanesinin bilgileri aşağıdadır.
 
 <h2 align="center">Kuveyt Turk BOA Packages</h2>

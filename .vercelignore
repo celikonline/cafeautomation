@@ -1,0 +1,12 @@
+node_modules
+tmp
+build
+.git
+.env
+.env.local
+.env.production
+.env.development
+.env.preview
+docs
+stories
+test

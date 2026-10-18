@@ -1,12 +1,14 @@
 {
   "name": "boa-workspace",
   "private": true,
+  "engines": {"node":"24.x"},
   "version": "1.0.0",
   "description": "BOA Components",
   "main": "index.js",
   "author": "Kuveyt Turk BOA One Team",
   "scripts": {
-    "test:cafe": "node --test examples/payments/guest-api.test.cjs examples/payments/game-rules.test.cjs examples/payments/video-library.test.cjs examples/payments/pwa.test.cjs",
+    "build:cafe": "cross-env NODE_ENV=production NODE_OPTIONS=--openssl-legacy-provider node examples/payments/build.cjs",
+    "test:cafe": "node --test examples/payments/guest-api.test.cjs examples/payments/game-rules.test.cjs examples/payments/video-library.test.cjs examples/payments/pwa.test.cjs examples/payments/cloud.test.cjs",
     "cafe": "cross-env NODE_OPTIONS=--openssl-legacy-provider node examples/payments/server.js",
     "payment": "cross-env NODE_OPTIONS=--openssl-legacy-provider node examples/payments/server.js",
     "start": "yarn run storybook",

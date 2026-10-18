@@ -1,0 +1,30 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "installCommand": "PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true npx --yes yarn@1.22.22 install --frozen-lockfile --ignore-engines --non-interactive --production=false",
+  "buildCommand": "npm run build:cafe",
+  "outputDirectory": "build/cafe",
+  "functions": {
+    "api/index.js": {
+      "maxDuration": 30,
+      "includeFiles": "examples/payments/{index.html,video-calendar.html,pwa/**}",
+      "excludeFiles": "{examples/payments/assets/**,packages/**,docs/**,stories/**,test/**,tmp/**}"
+    }
+  },
+  "rewrites": [
+    {"source": "/api/:path*", "destination": "/api/index"},
+    {"source": "/media/:path*", "destination": "/api/index"},
+    {"source": "/manifest.webmanifest", "destination": "/api/index"},
+    {"source": "/qr", "destination": "/api/index"},
+    {"source": "/loyalty", "destination": "/api/index"},
+    {"source": "/videos", "destination": "/api/index"},
+    {"source": "/", "destination": "/api/index"},
+    {"source": "/guest", "destination": "/index.html"}
+  ],
+  "headers": [
+    {"source": "/sw.js", "headers": [{"key":"Cache-Control","value":"no-cache"},{"key":"Service-Worker-Allowed","value":"/guest"}]},
+    {"source": "/app.js", "headers": [{"key":"Cache-Control","value":"public, max-age=0, must-revalidate"}]},
+    {"source": "/video-assets/:path*", "headers": [{"key":"Cache-Control","value":"public, max-age=31536000, immutable"},{"key":"X-Content-Type-Options","value":"nosniff"}]},
+    {"source": "/api/:path*", "headers": [{"key":"Cache-Control","value":"no-store"}]}
+  ]
+}
