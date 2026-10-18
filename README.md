@@ -1,4 +1,20 @@
-<h1 align="center">Kuveyt Turk BOA Packages</h1>
+<h1 align="center">BOA Pay · Bahçe Kafe</h1>
+
+BOA bileşenleriyle kafe yönetimi ve üyeliksiz müşteri uygulaması. QR ile masaya sipariş, paket talebi, sipariş geçmişi, sadakat kartı, 130 videoluk tarihli yayın akışı, 8 seviyeli hafıza oyunu ve PWA desteği içerir.
+
+```powershell
+$env:PUPPETEER_SKIP_CHROMIUM_DOWNLOAD='true'
+npx --yes yarn@1.22.22 install --frozen-lockfile --ignore-engines --non-interactive
+npm run cafe
+```
+
+Yönetim: [localhost:3000](http://127.0.0.1:3000/) · Müşteri: [localhost:3000/guest](http://127.0.0.1:3000/guest) · [Kurulum ve kullanım rehberi](examples/payments/README.md).
+
+Doğrulama: `npm run test:cafe`. Telefon üzerinden PWA kurulumu için HTTPS gerekir. Yerel müşteri kayıtları ve QR imzalama anahtarları `tmp/` altında tutulur; Git'e dahil edilmez.
+
+Bu proje [KuveytTurk/boa](https://github.com/KuveytTurk/boa) üzerine geliştirilmiştir. Orijinal bileşen kütüphanesinin bilgileri aşağıdadır.
+
+<h2 align="center">Kuveyt Turk BOA Packages</h2>
 
 <div align="center">
 

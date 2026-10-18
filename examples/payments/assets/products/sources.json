@@ -1,0 +1,110 @@
+[
+  {
+    "file": "latte.jpg",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Caffe_Latte_at_Pulse_Cafe.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d8/Caffe_Latte_at_Pulse_Cafe.jpg/960px-Caffe_Latte_at_Pulse_Cafe.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "B adger1",
+    "id": "latte",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+    "file": "americano.jpg",
+    "license": "Public domain",
+    "source": "https://commons.wikimedia.org/wiki/File:Espresso_Americano.jpeg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Espresso_Americano.jpeg/960px-Espresso_Americano.jpeg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "User:Sameer.siddhanti",
+    "id": "americano",
+    "licenseUrl": null
+  },
+  {
+    "file": "cappuccino.jpg",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Cappuccino_in_original.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Cappuccino_in_original.jpg/960px-Cappuccino_in_original.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Vee Satayamas",
+    "id": "cappuccino",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  {
+    "file": "turkish.jpg",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b5/T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg/960px-T%C3%BCrk_Kahvesi_-_Bakir_Cezve.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Eaeeae",
+    "id": "turkish",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "file": "iced.jpg",
+    "license": "CC BY-SA 4.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Iced_latte.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Iced_latte.jpg/960px-Iced_latte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Kritzolina",
+    "id": "iced",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+  },
+  {
+    "file": "lemonade.jpg",
+    "license": "CC BY 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Lemonade_-_27682817724.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/10/Lemonade_-_27682817724.jpg/960px-Lemonade_-_27682817724.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "HarshLight",
+    "id": "lemonade",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+  },
+  {
+    "file": "tea.jpg",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Turkish_tea2.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5b/Turkish_tea2.jpg/960px-Turkish_tea2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "henribergius",
+    "id": "tea",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  },
+  {
+    "file": "herbal.jpg",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Peppermint_tea_2.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/64/Peppermint_tea_2.jpg/960px-Peppermint_tea_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "congerdesign",
+    "id": "herbal",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+    "file": "cheesecake.jpg",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:San_Sebastian_Cheesecake.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bd/San_Sebastian_Cheesecake.jpg/960px-San_Sebastian_Cheesecake.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Stolbovsky",
+    "id": "cheesecake",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "file": "brownie.jpg",
+    "license": "CC BY-SA 3.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Chocolatebrownie.JPG",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/68/Chocolatebrownie.JPG/960px-Chocolatebrownie.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Ɱ",
+    "id": "brownie",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+  },
+  {
+    "file": "croissant.jpg",
+    "license": "CC0",
+    "source": "https://commons.wikimedia.org/wiki/File:Croissant-Petr_Kratochvil.jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2a/Croissant-Petr_Kratochvil.jpg/960px-Croissant-Petr_Kratochvil.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Petr Kratochvil",
+    "id": "croissant",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+  },
+  {
+    "file": "toast.jpg",
+    "license": "CC BY-SA 2.0",
+    "source": "https://commons.wikimedia.org/wiki/File:Classic_Grilled_Cheese_Sandwich_(25791331763)_(cropped).jpg",
+    "download": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Classic_Grilled_Cheese_Sandwich_%2825791331763%29_%28cropped%29.jpg/960px-Classic_Grilled_Cheese_Sandwich_%2825791331763%29_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+    "author": "Willis Lam",
+    "id": "toast",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+  }
+]

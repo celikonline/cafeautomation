@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+/* Brand reference: https://www.kuveytturk.com.tr/ — local payment prototype. */
+:root{font-family:'Titillium Web','Segoe UI',sans-serif;color:#333;background:#f4f5f6}
+.bank-app{--kt-green:#43b02a;--kt-dark:#328b20;--kt-light:#f0f8ed}
+button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible{outline-color:#43b02a}
+.kt-masthead{position:fixed;top:0;left:0;right:0;height:106px;background:white;z-index:10;border-bottom:1px solid #e8e8e8}
+.kt-utility{height:30px;padding:0 35px;background:#f5f5f8;color:#747478;display:flex;justify-content:space-between;align-items:center;font-size:11px}
+.kt-utility>span{letter-spacing:.2px}
+.kt-utility>div{display:flex;align-items:center;gap:24px}
+.kt-utility button{border:0;background:none;color:inherit;font-size:11px;padding:0}
+.kt-utility>div>span:last-child{border-left:1px solid #ddd;padding-left:18px;font-size:10px;color:#43b02a;font-weight:600}
+.kt-header-main{height:76px;padding:0 35px;display:flex;align-items:center;gap:44px}
+.kt-logo{display:flex;flex-shrink:0}
+.boa-pay-wordmark{display:block;width:205px;color:#43b02a;font-family:'Titillium Web','Segoe UI',sans-serif;font-size:36px;line-height:1.1;font-weight:700;letter-spacing:-1px;white-space:nowrap}
+.boa-pay-wordmark>span{font-weight:400;letter-spacing:-.6px}
+@media(max-width:1200px){.boa-pay-wordmark{width:190px}}
+@media(max-width:700px){.boa-pay-wordmark{width:168px;font-size:32px}}
+@media(max-width:620px){.boa-pay-wordmark{width:161px;font-size:31px}}
+.kt-logo img{display:block;width:205px;height:auto}
+.kt-audience{display:flex;align-items:center;gap:28px;font-size:15px;font-weight:600;height:100%}
+.kt-audience-active{color:#43b02a;position:relative;white-space:nowrap}
+.kt-audience-active:after{content:'';position:absolute;bottom:-11px;left:50%;width:5px;height:5px;border-radius:50%;background:#43b02a}
+.kt-channel{font-size:13px;color:#7e7e7e;font-weight:400;border-left:1px solid #ddd;padding-left:24px}
+.kt-header-right{margin-left:auto;display:flex;align-items:center;gap:20px}
+.kt-branch-label{display:flex;align-items:center;gap:9px;border-radius:10px;background:#43b02a;color:white;padding:13px 20px;font-size:14px;font-weight:600;white-space:nowrap}
+.sidebar{top:106px;width:234px;background:#fff;color:#555;border-right:1px solid #e5e7e8;padding:23px 17px 18px}
+.brand{font-size:20px;letter-spacing:-.5px;color:#333;line-height:1.3;padding:0 15px;font-weight:600}
+.brand-symbol{display:none}
+.brand-dot{font-size:11px;color:#929292;letter-spacing:0;font-weight:400;margin:0}
+.workspace-label{color:#9a9a9a;font-size:10px;letter-spacing:1.2px;margin:29px 15px 13px;font-weight:400}
+.nav-item{color:#666;font-size:14px;font-weight:400;border-radius:7px;gap:13px;margin:4px 0;padding:14px 15px}
+.nav-item svg{color:#8f9692;width:19px}
+.nav-item:hover{background:#f6f9f5;color:#3c9d27}
+.nav-item.active{background:#f0f8ed;color:#3a9c24;font-weight:600;box-shadow:inset 3px 0 #43b02a}
+.nav-item.active svg{color:#43b02a}
+.nav-count{background:#43b02a;color:white;border-radius:4px;font-size:11px}
+.help-card{background:#f7faf5;border:1px solid #e5ecdf;border-radius:10px;padding:18px 14px}
+.help-card>svg{color:#43b02a}
+.help-card h4{color:#3d5736;font-size:16px;font-weight:600;margin-top:10px}
+.help-card p{color:#87927f;font-size:12px;line-height:1.6}
+.help-card button{color:#3ca127;font-size:12px;font-weight:600}
+.secure-caption{color:#91a188;font-size:10px;margin-left:4px;gap:5px}
+.sidebar-bottom{padding-top:25px}
+.main-shell{margin-left:234px;padding-top:106px}
+.topbar{height:61px;background:#fafbfb;padding:0 35px;border-bottom:1px solid #e5e8e5}
+.breadcrumb{font-size:13px;color:#939393;gap:12px}
+.breadcrumb strong{color:#555}
+.topbar .demo-pill{display:none}
+.demo-pill{font-family:'Titillium Web','Segoe UI',sans-serif;font-size:11px;border-color:#e2e9de;color:#6d8064;background:#fbfdf9;padding:5px 9px;white-space:nowrap}
+.demo-pill i{background:#43b02a}
+.header-tools{gap:13px}
+.profile strong{font-size:13px;color:#555}
+.profile small{font-size:11px;color:#999}
+.avatar{background:#eff7eb;color:#4d8d39;font-weight:600}
+.icon-button{color:#747e70}
+.icon-button b{background:#43b02a}
+main{padding:27px 35px 0;max-width:1530px}
+.page-heading{margin-bottom:25px;padding-right:180px}
+.eyebrow{font-size:10px;color:#43a52c;letter-spacing:1.3px;font-weight:600}
+h1{color:#424242;font-size:30px;letter-spacing:-.6px;line-height:1.25;font-weight:600;margin:8px 0 9px;max-width:660px}
+.page-heading p{color:#8b8b8b;font-size:13px;line-height:1.6}
+.page-date{font-size:11px;color:#969b94;bottom:4px;display:flex;align-items:center;gap:7px}
+.overview{gap:17px;margin-bottom:26px;grid-template-columns:1.1fr 1fr 1fr}
+.balance-card{background:#43b02a;border-radius:11px;min-height:152px;padding:21px 23px}
+.balance-top>span:first-child{color:#f2ffe9;font-size:13px}
+.currency{color:white;border-color:#92cf83;font-size:10px}
+.balance-card>strong{font-size:31px;font-weight:600;letter-spacing:0;margin:12px 0 14px}
+.balance-bottom{color:#def5d6;font-size:10px}
+.card-orbit{border-color:#ffffff0b;box-shadow:0 0 0 26px #ffffff07}
+.stat-card{border-color:#e5e7e8;padding:23px 19px;gap:13px;border-radius:11px}
+.stat-card p{font-size:13px;color:#858585;margin-bottom:9px}
+.stat-card strong{font-size:29px;font-weight:600;letter-spacing:0;color:#4b4b4b}
+.stat-card small{font-size:10px;color:#9b9b9b;margin-top:12px}
+.stat-icon{width:37px;height:37px;border-radius:8px}
+.mint{background:#f0f8ec;color:#43b02a}
+.amber{color:#c49d50;background:#fbf7ee}
+.tiny-dot{background:#c6a15a}
+.content-grid{gap:24px;grid-template-columns:minmax(0,1.65fr) minmax(285px,1fr)}
+.panel{border-color:#e3e7e3;border-radius:11px}
+.panel-heading{padding:24px 25px 20px}
+h2{font-size:20px;color:#454545;font-weight:600;letter-spacing:-.3px}
+.panel-heading p{font-size:12px;color:#999}
+.subtle-icon{color:#43b02a;background:#f4f9f1}
+.payment-tabs{gap:23px;padding:0 25px;border-color:#eaeaea}
+.payment-tabs button{font-size:12px;color:#969996;padding-bottom:16px}
+.payment-tabs button.selected{color:#43a52b;border-color:#43b02a}
+.steps{gap:10px;padding:23px 25px 0}
+.step{font-size:10px;color:#aaa}
+.step>span{font-size:11px;width:23px;height:23px;border-color:#e7e7e7}
+.step.current{color:#3fa128}
+.step.current>span{background:#43b02a;border-color:#43b02a;color:white}
+.step.done>span{background:#43b02a;border-color:#43b02a}
+.step-line.complete{background:#83c671}
+.form-body{padding:28px 25px 0}
+.section-caption{font-size:14px;color:#4e4e4e;font-weight:600;margin-bottom:19px}
+.section-caption>span{color:#43b02a;font-size:11px;letter-spacing:0}
+.field-label{font-size:12px;color:#898989}
+.select-shell{border-color:#dfe5dc;color:#949b91;border-radius:6px;height:50px}
+.select-shell>svg{color:#43b02a}
+.select-shell select{font-size:14px;color:#555}
+.boa-input input{font-family:'Titillium Web','Segoe UI',sans-serif!important;font-size:14px!important;color:#555!important}
+.boa-input label{font-family:'Titillium Web','Segoe UI',sans-serif!important;font-size:14px!important}
+.field-hint{font-size:11px;color:#a0a0a0}
+.bill-found{background:#f3f9ef;border-color:#e1edd8;padding:13px 14px;border-radius:6px}
+.found-check{background:#e1f2d8;color:#43a52c}
+.bill-found>div:nth-child(2) strong{font-size:12px;color:#5e8b4c;font-weight:600}
+.bill-found>div:nth-child(2) span{font-size:10px;color:#8ea082}
+.found-amount{font-size:20px;color:#43a12a;font-weight:600;letter-spacing:0}
+.account-option{border-color:#e4e7e2;padding:13px 14px;border-radius:6px}
+.account-option.chosen{background:#fcfefb;border-color:#74bd60;box-shadow:none}
+.account-name strong{color:#555;font-size:13px;font-weight:600}
+.account-name small{font-size:10px;color:#aaa}
+.account-balance{font-size:14px;color:#555;font-weight:600}
+.account-balance small{font-size:9px;color:#aaa;font-weight:400}
+.chosen .radio-dot{border-color:#43b02a}
+.form-footer{background:#fcfdfb;border-color:#ebeee8;margin-left:-25px;margin-right:-25px;padding:18px 25px}
+.form-footer>span{font-size:11px;color:#91a186}
+.form-footer button{font-size:13px}
+.upcoming{padding:24px 22px 0}
+.side-description{font-size:12px;color:#999}
+.count-badge{font-size:12px;background:#f1f8ed;color:#5b9950;border-color:#e3ecde}
+.search-field{background:#f8faf6;border-color:#e8ece4;padding:11px 10px;margin-top:20px}
+.search-field input{font-size:12px;color:#666}
+.company-icon{border-radius:8px;width:36px;height:38px}
+.bill-item{padding:20px 0;border-color:#eef0eb;gap:10px}
+.bill-item:hover{background:#f8fcf5}
+.bill-info strong{font-size:13px;color:#555;font-weight:600}
+.bill-info small{font-size:10px;color:#aaa}
+.bill-price strong{font-size:14px;color:#555;font-weight:600}
+.bill-price small{font-size:10px;color:#aaa}
+.bill-price small.due-soon{color:#c1a365}
+.bill-info small span{font-size:9px}
+.add-subscription{font-size:12px;color:#43a92b;font-weight:600;padding:17px 0}
+.autopay-card{background:#f0f8ec;border-color:#e1ecd9;padding:24px;border-radius:11px}
+.autopay-icon{color:#43b02a;background:#e4f2db}
+.mini-label{font-size:10px;color:#7da367;letter-spacing:1px}
+.autopay-card h3{color:#4a703c;font-size:22px;font-weight:600;line-height:1.3}
+.autopay-card p{font-size:12px;color:#8b9d7f;line-height:1.7}
+.autopay-card button{font-size:13px;color:#43a92b;font-weight:600}
+.autopay-decoration{color:#e1efd8}
+.security-note{color:#9db48d}
+.security-note strong{font-size:12px;color:#809371}
+.security-note span{font-size:11px;color:#9ba78f}
+.recent h2{font-size:20px}
+.text-link{font-size:12px;color:#43a92b}
+th{font-size:10px;color:#aaa;letter-spacing:.6px}
+td{font-size:12px;color:#8e9389}
+.table-company strong{font-size:13px;color:#555;font-weight:600}
+.table-company small{font-size:10px;color:#aaa}
+.amount-cell{font-size:14px;color:#555;font-weight:600}
+.status-pill{font-size:10px;color:#62a449;background:#f2f8ed}
+.status-pill i{background:#43b02a}
+.page-footer{font-size:10px;color:#aaa}
+.consent input{accent-color:#43b02a}
+.consent{font-size:13px;color:#808b77}
+.review-title h3{font-size:23px;font-weight:600;color:#555}
+.review-title p{font-size:13px}
+.review dl>div{font-size:14px}
+.review dt{color:#999}
+.review .total dd{color:#43a92b;font-size:24px}
+.large-status{background:#eff8e9;color:#43b02a}
+.success-screen h2{font-size:29px}
+.success-screen p{font-size:14px}
+.success-amount{color:#43a92b}
+.modal p{font-size:14px}
+.modal h2{font-size:25px}
+.modal-overlay{background:#25302055}
+.demo-notice{font-size:12px;background:#f5f8f1;color:#95a385}
+@media(min-width:1600px){.sidebar{width:250px}.main-shell{margin-left:250px}.payment-tabs{gap:32px}.balance-card{min-height:164px}.page-heading{margin-bottom:30px}.kt-header-main{padding-left:42px;padding-right:42px}}
+@media(max-width:1200px){.kt-header-main{padding:0 25px;gap:30px}.kt-logo img{width:190px}.kt-channel{display:none}.sidebar{width:207px;padding-left:12px;padding-right:12px}.main-shell{margin-left:207px}.topbar{padding:0 26px}main{padding:25px 26px 0}.page-heading{padding-right:0}.page-date{position:static;margin-top:13px}h1{font-size:28px}.balance-card{padding:20px 17px}.balance-card>strong{font-size:28px}.balance-top>span:first-child{font-size:12px}.stat-card{padding:22px 15px;gap:9px}.stat-card strong{font-size:26px}.stat-card small{font-size:9px}.content-grid{grid-template-columns:minmax(0,1.5fr) minmax(275px,1fr);gap:18px}.payment-tabs{gap:17px;padding:0 20px}.payment-tabs button{font-size:11px}.step{font-size:9px}.steps{padding-left:20px;padding-right:20px;gap:7px}.form-body{padding-left:20px;padding-right:20px}.form-footer{margin-left:-20px;margin-right:-20px;padding-left:20px;padding-right:20px}.bill-info strong{font-size:12px}.bill-price strong{font-size:13px}.upcoming{padding-left:18px;padding-right:18px}.sidebar .brand{font-size:18px;padding:0 15px}.brand-dot{display:none}}
+@media(max-width:1000px){.sidebar{width:76px;padding:22px 9px}.main-shell{margin-left:76px}.sidebar .brand{display:none}.sidebar nav{margin-top:0}.sidebar .nav-item{font-size:0;padding:15px;justify-content:center;gap:0}.kt-header-main{gap:28px}.kt-header-right{gap:14px}.kt-branch-label{padding:11px 16px;font-size:13px}.kt-audience{font-size:14px}.overview{grid-template-columns:1fr 1fr}.balance-card{grid-column:1/-1;min-height:145px}.balance-card>strong{font-size:31px}.balance-bottom>span:last-child{display:flex}.stat-card{display:flex;align-items:center}.stat-card strong{font-size:28px}.content-grid{grid-template-columns:1fr}.right-column{grid-template-columns:1.1fr 1fr}.payment-tabs{gap:30px;padding:0 25px}.payment-tabs button{font-size:13px}.form-body{padding-left:25px;padding-right:25px}.form-footer{margin-left:-25px;margin-right:-25px;padding-left:25px;padding-right:25px}.step{font-size:11px}.steps{padding-left:25px;padding-right:25px;gap:12px}.bill-info strong{font-size:13px}}
+@media(max-width:700px){.kt-header-main{padding:0 19px;gap:20px}.kt-logo img{width:168px}.kt-audience{display:none}.kt-branch-label{padding:10px 13px;font-size:12px}.kt-header-right{gap:8px}.kt-header-right .demo-pill{font-size:10px;padding:4px 7px}.kt-utility{padding:0 19px}.kt-utility>div{gap:16px}.kt-utility button{font-size:10px}.kt-utility>span{font-size:10px}.kt-header-right .demo-pill i{display:none}}
+@media(max-width:620px){.sidebar{display:none}.main-shell{margin-left:0;padding-top:94px}.kt-masthead{height:94px}.kt-header-main{height:65px;padding:0 17px}.kt-utility{height:29px;padding:0 17px}.kt-logo img{width:161px}.kt-branch-label{display:none}.kt-header-right .demo-pill{display:flex;font-size:11px;padding:5px 8px}.topbar{height:55px;padding:0 19px}.breadcrumb{font-size:12px}.header-tools{gap:7px}main{padding:23px 17px 0}.page-heading{margin-bottom:22px}.page-heading h1{font-size:28px;max-width:290px;line-height:1.2}.page-heading p{font-size:12px;max-width:310px}.page-date{font-size:10px;margin-top:14px}.eyebrow{font-size:9px}.overview{gap:11px;margin-bottom:20px}.balance-card{min-height:153px;padding:20px}.balance-top>span:first-child{font-size:13px}.balance-bottom{font-size:9px}.stat-card{display:block;padding:16px 13px;min-height:150px}.stat-card p{font-size:12px}.stat-card strong{font-size:26px;line-height:1.2}.stat-card small{font-size:9px;margin-top:10px;line-height:1.5}.stat-icon{width:29px;height:29px;margin-bottom:10px}.content-grid{gap:20px}.panel-heading{padding:20px 18px}.panel-heading h2{font-size:20px}.panel-heading p{font-size:11px}.payment-tabs{padding:0 17px;gap:0}.payment-tabs button{font-size:11px;gap:5px}.steps{padding:23px 17px 0;gap:8px}.step{font-size:9px;gap:5px}.step>span{width:20px;height:20px;font-size:10px}.form-body{padding:26px 18px 0}.section-caption{font-size:13px}.select-shell select{font-size:13px}.field-hint{font-size:10px}.account-option{padding:12px 10px;gap:8px}.account-name strong{font-size:12px}.account-name small{font-size:9px}.account-balance{font-size:13px}.account-balance small{font-size:9px}.form-footer{margin-left:-18px;margin-right:-18px;padding:17px 18px}.form-footer>span{font-size:10px}.right-column{grid-template-columns:1fr}.upcoming{padding:22px 20px 0}.autopay-card{min-height:0}.bill-info small span{font-size:9px}.page-footer{font-size:9px}.review dl>div{font-size:12px}.success-screen h2{font-size:26px}}

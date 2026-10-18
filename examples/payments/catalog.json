@@ -1,0 +1,110 @@
+[
+  {
+    "id": "latte",
+    "name": "Caffè Latte",
+    "category": "Kahveler",
+    "price": 145,
+    "icon": "coffee",
+    "description": "Espresso, süt ve kadifemsi köpük",
+    "tone": "latte"
+  },
+  {
+    "id": "americano",
+    "name": "Americano",
+    "category": "Kahveler",
+    "price": 110,
+    "icon": "coffee",
+    "description": "Çift shot espresso, sıcak su",
+    "tone": "coffee"
+  },
+  {
+    "id": "cappuccino",
+    "name": "Cappuccino",
+    "category": "Kahveler",
+    "price": 140,
+    "icon": "coffee",
+    "description": "Espresso ve yoğun süt köpüğü",
+    "tone": "latte"
+  },
+  {
+    "id": "turkish",
+    "name": "Türk Kahvesi",
+    "category": "Kahveler",
+    "price": 95,
+    "icon": "coffee",
+    "description": "Geleneksel, taze çekilmiş",
+    "tone": "coffee"
+  },
+  {
+    "id": "iced",
+    "name": "Iced Latte",
+    "category": "Soğuk İçecekler",
+    "price": 155,
+    "icon": "glass",
+    "description": "Buz, espresso ve soğuk süt",
+    "tone": "blue"
+  },
+  {
+    "id": "lemonade",
+    "name": "Ev Yapımı Limonata",
+    "category": "Soğuk İçecekler",
+    "price": 100,
+    "icon": "glass",
+    "description": "Taze limon ve nane",
+    "tone": "lemon"
+  },
+  {
+    "id": "tea",
+    "name": "Demleme Çay",
+    "category": "Çaylar",
+    "price": 45,
+    "icon": "tea",
+    "description": "Taze demlenmiş siyah çay",
+    "tone": "tea"
+  },
+  {
+    "id": "herbal",
+    "name": "Bitki Çayı",
+    "category": "Çaylar",
+    "price": 90,
+    "icon": "tea",
+    "description": "Ihlamur, adaçayı veya yeşil çay",
+    "tone": "mint"
+  },
+  {
+    "id": "cheesecake",
+    "name": "San Sebastian",
+    "category": "Tatlılar",
+    "price": 210,
+    "icon": "cake",
+    "description": "Kremamsı doku, çikolata sosu",
+    "tone": "cake"
+  },
+  {
+    "id": "brownie",
+    "name": "Çikolatalı Brownie",
+    "category": "Tatlılar",
+    "price": 180,
+    "icon": "cake",
+    "description": "Belçika çikolatası ile",
+    "tone": "coffee"
+  },
+  {
+    "id": "croissant",
+    "name": "Tereyağlı Kruvasan",
+    "category": "Atıştırmalıklar",
+    "price": 125,
+    "icon": "food",
+    "description": "Günlük, fırından taze",
+    "tone": "lemon"
+  },
+  {
+    "id": "toast",
+    "name": "Kaşarlı Tost",
+    "category": "Atıştırmalıklar",
+    "price": 160,
+    "icon": "food",
+    "description": "Ekşi maya ekmeği, kaşar peyniri",
+    "tone": "cake"
+  }
+]
