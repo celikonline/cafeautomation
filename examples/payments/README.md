@@ -76,7 +76,7 @@ Bu dosya temelli sunucu yerel demo içindir. Gerçek ödeme, kullanıcı yetkile
 
 ### Tarihli video yayınları
 
-`video-catalog.json` sabit yayın planıdır. 19 Ekim – 13 Kasım 2026 arasında her gün 5 video açılır. Türkiye saati (`Europe/Istanbul`) sunucuda hesaplanır; 00.00'da o güne ait içerikler otomatik görünür. Önceki içerikler arşivde kalır ve yeni yayınlar en üste gelir. 26 gün sonunda 130 videonun tamamı görünür; bunun ötesinde otomatik yeni içerik üretilmez.
+`video-catalog.json` sabit yayın planıdır. 19 Ekim 2026 başlangıcında 50 video görünür. Kalan 80 video 20 Ekim – 4 Kasım 2026 arasında her gün 5 yeni video olarak açılır. Türkiye saati (`Europe/Istanbul`) sunucuda hesaplanır; 00.00'da o güne ait içerikler otomatik görünür. Önceki içerikler arşivde kalır ve yeni yayınlar en üste gelir. 17 günlük plan sonunda 130 videonun tamamı görünür; bunun ötesinde otomatik yeni içerik üretilmez.
 
 Sunucunun yeniden başlaması tarihleri kaydırmaz. Müşteri tarihi veya URL parametresi yayın saatini değiştiremez; gelecekteki MP4'ler doğrudan adreslerinden de 404 döner. `/videos` sadece localhost'ta açılan aylık takvimi ve korumalı yönetici önizlemesini sunar. Tarih değiştirmek için katalogdaki `publishOn` alanını düzenleyip sunucuyu yeniden başlatın. `build-video-calendar.cjs` mevcut planı yeniden üretir; bilinçli çalıştırılmalıdır. `prepare-video-library.cjs` dosyaları kaynaktan tekrar hazırlamak için isteğe bağlı araçtır; uygulamanın açılması internetten indirme yapmaz.
 
