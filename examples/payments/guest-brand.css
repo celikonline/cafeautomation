@@ -1,0 +1,29 @@
+/* Bahçe's own coffee emblem, with bright green and warm gold brand references. */
+.guest-app{--bahce-green:#287d32;--bahce-bright:#43b02a;--bahce-deep:#174c32;--bahce-gold:#bb9855;color:#355640;background:#fafbf7}
+.guest-header{border-top:4px solid #43b02a;border-bottom:1px solid #e1eadb;background:#fffefa;box-shadow:0 3px 16px #194a2610}
+.guest-header:after{content:'';position:absolute;top:-4px;right:0;height:4px;width:18%;background:var(--bahce-gold)}
+.guest-brand>span{background:#edf6e5;color:var(--bahce-bright);border:1px solid #dbead0;border-radius:11px;width:42px;height:42px;position:relative}
+.guest-brand>span:after{content:'';position:absolute;right:-3px;top:-3px;width:7px;height:7px;background:var(--bahce-gold);transform:rotate(45deg);border:2px solid #fffefa}
+.guest-brand>strong{color:var(--bahce-deep)}.guest-brand small{color:#78846a}
+.guest-desktop-nav button{color:#6e7d65}.guest-desktop-nav button.active{color:var(--bahce-green)}
+.guest-desktop-nav button.active:after{background:var(--bahce-bright);border-radius:1px;transform:rotate(45deg)}
+.guest-table{color:#327c37;background:#f3f8ed;border-color:#d6e8cb}.table-order-count{background:var(--bahce-green)}.guest-cart-button{color:var(--bahce-green)}
+.guest-eyebrow{color:#5d8544}.guest-page-intro>.guest-eyebrow:before,.discovery-intro>.guest-eyebrow:before{content:'';display:inline-block;height:6px;width:6px;transform:rotate(45deg);background:var(--bahce-gold);margin-right:9px;vertical-align:1px}
+.discovery-intro h1{color:var(--bahce-deep)}.discovery-intro h1 em{color:#4d933d}.discovery-intro>p,.guest-page-intro p{color:#74816b}
+.discovery-table{color:#43a12f;border-color:#dce9d4}.discovery-table strong{color:#477e3e}.discovery-table span{color:#7c8d71}.intro-menu-button{color:var(--bahce-green)}
+.tiny-ritual>span{color:#7a8f67}.tiny-ritual p{color:#7d8b6b}.guest-powered{display:flex;align-items:center;gap:8px;color:#718464}.guest-powered>svg{color:var(--bahce-bright)}
+.reel-feed{box-shadow:0 16px 38px #184c2318;border:1px solid #dbe5d2}.reel-top i{background:#cfb67f}.reel-tag{color:#e4d3a1}.reel-product{border-color:#e2ce9b60}.reel-product>svg{color:#e2cc91}
+.mini-loyalty{background:linear-gradient(135deg,#f1f7e9,#f8f4e7);border-color:#dce7c9}.mini-loyalty:after{content:'';position:absolute;width:82px;height:82px;right:-35px;top:-35px;border:1px solid #b99b5866;transform:rotate(45deg);box-shadow:0 0 0 10px #b99b5810,0 0 0 24px #43b02a08;pointer-events:none}
+.mini-loyalty h3{color:#45743e}.mini-loyalty>svg{color:#b28c46}.mini-loyalty button{color:var(--bahce-green)}.mini-stamps .earned{background:#4c9b35;color:white;border-color:#4c9b35}
+.guest-categories button.active{background:var(--bahce-green);color:#fff}.customer-product-info h2{color:#3e6737}.customer-product-info strong{color:var(--bahce-green)}.customer-product-info button{background:#eaf4e1;color:var(--bahce-green)}
+.table-order-summary{background:linear-gradient(120deg,#edf6e6,#faf7ed);border-color:#d9e7cb;position:relative;overflow:hidden}.table-order-summary>div{position:relative;z-index:1}.table-order-summary>button{background:var(--bahce-green)}
+.active-order-banner{background:#edf6e5;border-color:#d7e7ca;color:#396c31}.active-order-banner i{background:var(--bahce-bright)}
+.loyalty-card{background:linear-gradient(130deg,#184f32,#287b36);border-color:#458e3d;box-shadow:0 12px 30px #204e231a}
+.loyalty-card:after{content:'';position:absolute;right:-63px;top:65px;height:235px;width:235px;border:1px solid #d7bc784d;transform:rotate(45deg);box-shadow:0 0 0 18px #d7bc7812,0 0 0 48px #d7bc7809;pointer-events:none}
+.loyalty-card-top>svg{color:#e6ce93}.loyalty-card-top,.loyalty-greeting,.loyalty-card h2,.loyalty-stamps,.loyalty-card-bottom{position:relative;z-index:1}.loyalty-stamps>span.earned{background:#f2e7c9;border-color:#dfca96;color:#356b35}.loyalty-card-bottom{color:#e2e9d2}
+.pwa-install-card{border-left:3px solid var(--bahce-gold);background:#f0f7e9}.pwa-install-card button,.wallet-orders-link button,.reward-button,.game-next{background:var(--bahce-green);color:#fff}
+.guest-mobile-nav{border-top-color:#dbe7d1;background:#fffef9}.guest-mobile-nav button.active{color:var(--bahce-green)}.guest-mobile-nav button.active:before{background:var(--bahce-bright)}
+.guest-floating-cart{background:var(--bahce-green);box-shadow:0 8px 25px #287d3233}.guest-toast{border-color:#d4e5c4;color:#356b35}.guest-dialog{border-top:4px solid var(--bahce-gold)}
+.guest-dialog h2{color:var(--bahce-deep)}.guest-footer{border-top-color:#dce6d4}.guest-footer>span{color:#638451}
+@media(max-width:700px){.guest-header{border-top-width:3px}.guest-header:after{top:-3px;height:3px;width:22%}.guest-brand>span{width:35px;height:35px;border-radius:9px}.guest-brand>span>svg{width:25px;height:25px}.guest-page-intro>.guest-eyebrow:before{height:5px;width:5px}.guest-mobile-nav button.active:before{background:var(--bahce-bright)}.guest-powered{gap:6px}}
+@media(prefers-reduced-motion:reduce){.qr-scan-guide>b{animation:none}}

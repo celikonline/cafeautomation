@@ -18,6 +18,10 @@ npm run cafe
 
 QR sayfasındaki “Bu masayı bilgisayarda dene” bağlantıları masa bağlı müşteri panelini açar. `/guest` bağlantısı QR olmadan menü ve eğlenceyi gösterir; sipariş için geçerli masa kodu gerekir.
 
+Müşteri ekranında **Masam → Masandan QR kodunu okut** kamera tarayıcısını açar. Mobilde arka kamera tercih edilir; kamera erişimi için HTTPS veya localhost gerekir. Fotoğraf/ekran görüntüsünden QR seçimi de desteklenir. Görüntüler cihazda çözülür; yalnızca aynı siteye ait, sunucuda imzası doğrulanan masa bağlantısı açılır. Pencere kapanınca kamera durur; sepet seçilen masaya taşınır.
+
+Video akışında başlık, açıklama ve sipariş kartı **Detaylar** ile açılır; görüntü varsayılan olarak serbest kalır. **YouTube’da devam et** altı hazırlanmış kahve videosundan izleme süresi ve tekrarlara göre seçim yapan sinemayı açar. YouTube IFrame API ile video bitince sıradaki öneri oynatılır; otomatik devam kapatılabilir. İzleme özeti yalnızca `boa-video-interest-v1` yerel depolamasında tutulur, 260 kayıtla sınırlıdır ve 14 günlük yarı ömürle eski ilgiler azalır. Arka plan ve duraklatma süreleri sayılmaz; geçmiş sinemadan sıfırlanır. YouTube yalnızca sinema açılınca yüklenir. Öneriler bu hazırlanmış listeyle sınırlıdır; kullanıcının YouTube hesap geçmişine erişilmez.
+
 Sunucu `0.0.0.0:3000` üzerinde dinler. QR kodları etkin özel ağın adresini kullanır; telefon bilgisayarla aynı Wi-Fi ağında olmalıdır. Windows güvenlik duvarı bağlantıyı engelliyorsa 3000 portuna özel ağ erişimi verilmelidir. Yönetim API'si ve QR/sadakat yönetim sayfaları sadece localhost'tan erişilebilir. Telefon erişimi bir gerçek cihazdan ayrıca denenmelidir; yerel ağ HTTP isteği doğrulanmıştır.
 
 QR adresini açıkça ayarlamak için:
