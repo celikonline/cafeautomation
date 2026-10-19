@@ -1,5 +1,10 @@
 const test=require('node:test'),assert=require('node:assert/strict');
 const interest=require('./video-interest.cjs');
+test('YouTube recommendations contain only the prepared Turkish coffee videos',()=>{
+ assert.equal(interest.youtube.length,6);
+ assert.equal(new Set(interest.youtube.map(clip=>clip.id)).size,6);
+ interest.youtube.forEach(clip=>{assert.equal(clip.language,'tr');assert.match(clip.id,/^[\w-]{11}$/);assert.ok(clip.by&&clip.title);});
+});
 test('watch time and loops personalize the next YouTube video without duplicates',()=>{
  let profile={};const latte={id:'reel-latte',product:'latte'},iced={id:'reel-iced',product:'iced'};
  for(let i=0;i<20;i++)profile=interest.record(profile,latte,1,i===19,10000);

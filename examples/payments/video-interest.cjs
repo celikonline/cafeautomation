@@ -1,12 +1,48 @@
 // Anonymous viewing preferences stay in the browser; only published clips are ranked.
 const topics={latte:'latte',cappuccino:'latte',iced:'iced',americano:'brew',turkish:'espresso'};
 const youtube=[
-  {id:'20HxMMSqRyg',topic:'latte',title:'Latte sanatına ilk adım',by:'James Hoffmann'},
-  {id:'GD8RUoOalBU',topic:'latte',title:'Sütlü kahvenin dengesi',by:'James Hoffmann'},
-  {id:'AI4ynXzkSQo',topic:'brew',title:'V60 ile kahve demleme',by:'James Hoffmann'},
-  {id:'F4wrUP4c5P4',topic:'espresso',title:'Espresso: kahve ve su oranı',by:'James Hoffmann'},
-  {id:'PApBycDrPo0',topic:'iced',title:'Buzlu filtre kahvenin sırrı',by:'James Hoffmann'},
-  {id:'8uGGeV8A-BM',topic:'iced',title:'Soğuk kahve için farklı bir teknik',by:'James Hoffmann'}
+  {
+    "id": "ZnQlBUW6y00",
+    "topic": "latte",
+    "language": "tr",
+    "title": "Latte Art Nasıl Yapılır? Latte Art Eğitimi | En Detaylı Eğitim",
+    "by": "Varona Coffee & Roastery"
+  },
+  {
+    "id": "4BdwUKWU2cw",
+    "topic": "brew",
+    "language": "tr",
+    "title": "V60 ile Kahve Demleme Tekniği - Ben Nasıl Demliyorum?",
+    "by": "Kahve Masası"
+  },
+  {
+    "id": "8Bw3oqCitKc",
+    "topic": "brew",
+    "language": "tr",
+    "title": "V60 ile Kahve Nasıl Demlenir?",
+    "by": "Baristocrat Specialty Coffee Experience"
+  },
+  {
+    "id": "gnf3pnp7c58",
+    "topic": "espresso",
+    "language": "tr",
+    "title": "Espresso nasıl yapılır?",
+    "by": "cevaptv"
+  },
+  {
+    "id": "JqTNzDFEHMA",
+    "topic": "iced",
+    "language": "tr",
+    "title": "Buzlu Soğuk Kahve Yapımında En İyi Yöntem! 👌🏻😉",
+    "by": "Nefis Yemek Tarifleri"
+  },
+  {
+    "id": "Y0cVqVtl9Qk",
+    "topic": "iced",
+    "language": "tr",
+    "title": "1 Dakikada Hazır! 🙌🏻 Buz Gibi Soğuk Türk Kahvesi ☕🤤",
+    "by": "Nefis Yemek Tarifleri"
+  }
 ];
 const topic=clip=>clip.topic||topics[clip.product]||'brew';
 function clean(value){

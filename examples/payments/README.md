@@ -4,6 +4,8 @@ BOA bileşenleriyle geliştirilmiş yönetim paneli ve masaya bağlı müşteri 
 
 Vercel dağıtımı da desteklenir: [Vercel kurulum rehberi](../../VERCEL.md). Aşağıdaki yerel dosya ve localhost erişim bilgileri `npm run cafe` için geçerlidir; bulutta Redis ve parola korumalı yönetim kullanılır.
 
+Müşteri arayüzü, [Kuveyt Türk ana sayfası](https://www.kuveytturk.com.tr/) 19 Ekim 2026 tarihinde incelenerek parlak yeşil (`#43b02a`), beyaz üst menü, ince yardımcı menü, gri zemin, düz kalın tipografi ve yuvarlatılmış kampanya kartlarıyla düzenlenmiştir. Başlık BOA Pay, kafe kimliği Bahçe Kafe’dir. Bankanın logo, font veya kampanya görselleri kullanılmaz; mevcut DM Sans ve uygulamanın kendi geometrik kahve işareti kullanılır. Mobilde kaydırmalı video ekranı korunur.
+
 ## Çalıştırma
 
 ```powershell
@@ -20,7 +22,7 @@ QR sayfasındaki “Bu masayı bilgisayarda dene” bağlantıları masa bağlı
 
 Müşteri ekranında **Masam → Masandan QR kodunu okut** kamera tarayıcısını açar. Mobilde arka kamera tercih edilir; kamera erişimi için HTTPS veya localhost gerekir. Fotoğraf/ekran görüntüsünden QR seçimi de desteklenir. Görüntüler cihazda çözülür; yalnızca aynı siteye ait, sunucuda imzası doğrulanan masa bağlantısı açılır. Pencere kapanınca kamera durur; sepet seçilen masaya taşınır.
 
-Video akışında başlık, açıklama ve sipariş kartı **Detaylar** ile açılır; görüntü varsayılan olarak serbest kalır. **YouTube’da devam et** altı hazırlanmış kahve videosundan izleme süresi ve tekrarlara göre seçim yapan sinemayı açar. YouTube IFrame API ile video bitince sıradaki öneri oynatılır; otomatik devam kapatılabilir. İzleme özeti yalnızca `boa-video-interest-v1` yerel depolamasında tutulur, 260 kayıtla sınırlıdır ve 14 günlük yarı ömürle eski ilgiler azalır. Arka plan ve duraklatma süreleri sayılmaz; geçmiş sinemadan sıfırlanır. YouTube yalnızca sinema açılınca yüklenir. Öneriler bu hazırlanmış listeyle sınırlıdır; kullanıcının YouTube hesap geçmişine erişilmez.
+Video akışında büyük başlık ve açıklamalar görüntüyü kapatmaz. Alttaki **Bunu masamda isterim** kartı ürün, fiyat ve sepete ekleme düğmesini doğrudan gösterir. Üstteki **YouTube ↗** altı hazırlanmış Türkçe kahve videosundan izleme süresi ve tekrarlara göre seçim yapan sinemayı açar. YouTube IFrame API ile video bitince sıradaki öneri oynatılır; otomatik devam kapatılabilir. İzleme özeti yalnızca `boa-video-interest-v1` yerel depolamasında tutulur, 260 kayıtla sınırlıdır ve 14 günlük yarı ömürle eski ilgiler azalır. Arka plan ve duraklatma süreleri sayılmaz; geçmiş sinemadan sıfırlanır. YouTube yalnızca sinema açılınca yüklenir. Öneriler bu hazırlanmış listeyle sınırlıdır; kullanıcının YouTube hesap geçmişine erişilmez.
 
 Sunucu `0.0.0.0:3000` üzerinde dinler. QR kodları etkin özel ağın adresini kullanır; telefon bilgisayarla aynı Wi-Fi ağında olmalıdır. Windows güvenlik duvarı bağlantıyı engelliyorsa 3000 portuna özel ağ erişimi verilmelidir. Yönetim API'si ve QR/sadakat yönetim sayfaları sadece localhost'tan erişilebilir. Telefon erişimi bir gerçek cihazdan ayrıca denenmelidir; yerel ağ HTTP isteği doğrulanmıştır.
 
